@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic','starter.controllers'])
+angular.module('app', ['ionic','starter.controllers','ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -62,7 +62,8 @@ angular.module('app', ['ionic','starter.controllers'])
     
     .state('scantx', {
       url: '/scantx',
-      templateUrl: 'scantx.html'
+      templateUrl: 'scantx.html',
+      controller: 'scantxCtrl'
     })
     
     .state('offlinescan', {
