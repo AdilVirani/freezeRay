@@ -11,6 +11,14 @@ angular.module('starter.controllers', ['ngCordova'])
       });
   };
 })
+.controller('welcomeCtrl', function($scope) {
+  localStorage.getItem('password');
+});
+.controller('createCtrl', function($scope) {
+  $scope.savePassword = function(password) {
+    localStorage.set('password',password)
+  }
+})
 .controller('scantxCtrl', function($scope, $cordovaBarcodeScanner) {
   $scope.scanBarcode = function() {
       $cordovaBarcodeScanner.scan().then(function(imageData) {

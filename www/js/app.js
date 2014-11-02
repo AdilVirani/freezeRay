@@ -31,7 +31,8 @@ angular.module('app', ['ionic','starter.controllers'])
     
     .state('welcome', {
       url: '/welcome',
-      templateUrl: 'welcome.html'
+      templateUrl: 'welcome.html',
+      controller: 'welcomeCtrl'
     })
 
     .state('wallet', {
@@ -41,7 +42,8 @@ angular.module('app', ['ionic','starter.controllers'])
     
     .state('create', {
       url: '/create',
-      templateUrl: 'create.html'
+      templateUrl: 'create.html',
+      controller: "createCtrl"
     })
     
     .state('reminders', {
