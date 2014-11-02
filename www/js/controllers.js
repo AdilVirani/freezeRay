@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ngCordova'])
 
 .controller('sendCtrl', function($scope, $cordovaBarcodeScanner) {
   $scope.scanBarcode = function() {
