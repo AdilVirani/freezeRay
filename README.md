@@ -6,4 +6,5 @@ If you're on a Mac:
 
 Clone
 Run: ionic emulate ios
+
 Devs: Adil Virani, Elliot Lee, Benny Yan, Bryan
